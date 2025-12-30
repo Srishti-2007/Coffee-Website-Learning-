@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Coffee House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <nav>
+        <div class="nav-container"> 
+            <div class="logo">☕ Coffee House</div>
+            <ul class="nav-link">
+                <li><a href="#">Home</a></li>
+                 <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+     </nav>
+     <!-- Hero section -->
+      <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Coffee House</h1>
+            <p>Where Every Cup Tells a Story ☕</p>
+            <a href="#" class="button">Explore Menu</a>
+        </div>
+      </section>
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="section-container">
+        <h2 class="section-title">Our Story</h2>
+        <p class="section-subtitle">Brewing Happiness Since 2010</p>
+        
+        <div class="about-content">
+            <!-- Left: Image -->
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600&q=80" alt="Cozy Coffee Shop">
+            </div>
+            
+            <!-- Right: Text -->
+            <div class="about-text">
+                <h3>
+                    <span>Welcome to</span>
+                    Crafted with Passion
+                </h3>
+                <p>We are passionate coffee lovers dedicated to bringing you the finest coffee experience. Our beans are sourced from the best farms around the world.</p>
+                <p>Every cup we serve is crafted with love and attention to detail. From the moment you walk in, you'll feel the warmth of our cozy atmosphere.</p>
+                <p>Join us for a perfect cup of coffee and make yourself at home!</p>
+                
+                <!-- Feature Boxes -->
+                <div class="features">
+                    <div class="feature-box">
+                        <div class="icon">
+                            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=100&h=100&fit=crop" alt="Fresh Beans">
+                        </div>
+                        <h4>Fresh Beans</h4>
+                        <p>Daily roasted premium beans</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="icon">
+                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=100&h=100&fit=crop" alt="Barista">
+                        </div>
+                        <h4>Expert Baristas</h4>
+                        <p>Skilled & passionate team</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="icon">
+                            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=100&h=100&fit=crop" alt="Coffee Art">
+                        </div>
+                        <h4>Made with Love</h4>
+                        <p>Every cup is special</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <Menu Section -->
+ <section id="menu" class="menu">
+        <div class="section-container">
+            <h2 class="section-title">Our Special Menu</h2>
+            <p class="section-subtitle">Handcrafted with Love & Passion</p>
+            
+            <!-- CATEGORY TABS -->
+            <div class="category-tabs">
+                <button class="category-btn active" onclick="filterMenu('all')">All Items</button>
+                <button class="category-btn" onclick="filterMenu('hot')">Hot Coffee</button>
+                <button class="category-btn" onclick="filterMenu('cold')">Cold Coffee</button>
+                <button class="category-btn" onclick="filterMenu('special')">Special</button>
+            </div>
+            
+            <!-- MENU GRID -->
+            <div class="menu-grid">
+                
+                <!-- Hot Coffee Items -->
+                <div class="menu-item" data-category="hot">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=400" alt="Espresso">
+                        <span class="menu-badge">Hot ☕</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Classic Espresso</h3>
+                        <p>Rich and bold espresso shot made from premium Italian beans</p>
+                        <div class="price-section">
+                            <span class="price">₹150</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hot">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400" alt="Cappuccino">
+                        <span class="menu-badge">Hot ☕</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Cappuccino</h3>
+                        <p>Perfect blend of espresso, steamed milk and velvety foam</p>
+                        <div class="price-section">
+                            <span class="price">₹180</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hot">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400" alt="Latte">
+                        <span class="menu-badge">Hot ☕</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Caramel Latte</h3>
+                        <p>Smooth latte with sweet caramel drizzle and whipped cream</p>
+                        <div class="price-section">
+                            <span class="price">₹200</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="hot">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400" alt="Mocha">
+                        <span class="menu-badge">Hot ☕</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chocolate Mocha</h3>
+                        <p>Espresso with rich Belgian chocolate and steamed milk</p>
+                        <div class="price-section">
+                            <span class="price">₹220</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cold Coffee Items -->
+                <div class="menu-item" data-category="cold">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400" alt="Cold Brew">
+                        <span class="menu-badge">Cold 🧊</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Cold Brew</h3>
+                        <p>Smooth and refreshing cold brewed coffee served on ice</p>
+                        <div class="price-section">
+                            <span class="price">₹170</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cold">
+                    <div class="menu-item-image">
+                        <img src="image.png" alt="Frappuccino">
+                        <span class="menu-badge">Cold 🧊</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Vanilla Frappuccino</h3>
+                        <p>Blended ice coffee with vanilla and topped with cream</p>
+                        <div class="price-section">
+                            <span class="price">₹240</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="cold">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400" alt="Iced Latte">
+                        <span class="menu-badge">Cold 🧊</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Iced Caramel Latte</h3>
+                        <p>Chilled espresso with milk and caramel over ice</p>
+                        <div class="price-section">
+                            <span class="price">₹190</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Items -->
+                <div class="menu-item" data-category="special">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=400" alt="Affogato">
+                        <span class="menu-badge">Special ⭐</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Affogato</h3>
+                        <p>Vanilla ice cream drowned in hot espresso shot</p>
+                        <div class="price-section">
+                            <span class="price">₹250</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="special">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400" alt="Irish Coffee">
+                        <span class="menu-badge">Special ⭐</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Irish Coffee</h3>
+                        <p>Hot coffee with Irish cream and whipped cream topping</p>
+                        <div class="price-section">
+                            <span class="price">₹280</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="info-note">
+                💡 Click on category buttons above to filter menu items!
+            </div> -->
+        </div>
+    </section>
+
+    <script>
+        // Filter menu function
+        function filterMenu(category) {
+            // Get all menu items
+            const items = document.querySelectorAll('.menu-item');
+            const buttons = document.querySelectorAll('.category-btn');
+            
+            // Remove active class from all buttons
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+            
+            // Show/hide items based on category
+            items.forEach(item => {
+                if (category === 'all') {
+                    item.classList.remove('hidden');
+                } else {
+                    if (item.getAttribute('data-category') === category) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
